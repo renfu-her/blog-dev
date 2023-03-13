@@ -12,16 +12,32 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="mt-5 mb-4">
-            <h1 class="text-success">
-                GeeksforGeeks
-            </h1>
-            <strong>
-                Bootstrap 5 Cards Mansory
-            </strong>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <main class="container">
 
         <div class="row mb-5" data-masonry='{"percentPosition": true }'>
             @livewire('post-get')
@@ -93,7 +109,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-4 py-3">
+        <div class="container">
+            <p>&copy; 2023 My Blog. All rights reserved.</p>
+            <ul class="list-unstyled d-flex justify-content-end">
+                <li class="mx-2"><a href="#">Privacy Policy</a></li>
+                <li class="mx-2"><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

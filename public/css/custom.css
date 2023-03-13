@@ -1,0 +1,16 @@
+.header {
+    background-color: #CCD5AE;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #E9EDC9;
+    z-index: 1055;
+    color: gray;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+  }
